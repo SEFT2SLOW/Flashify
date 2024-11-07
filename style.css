@@ -1,0 +1,7 @@
+.header{position: fixed; top: 6px; width: 95%; height: 90px; background: #dedddc; color: white;border-radius: 25px;}
+.logo{position: fixed;top: 0 ; left: 0;}
+h1{position: fixed; top: 10px; left: 90px;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;font-family:Verdana, Geneva, Tahoma, sans-serif}
+.nupp2, .nupp1{transition-duration: 0.4s;; padding: 12px 28px;border-radius: 12px;background-color: white;color: black;border: 2px solid #dfa041;text-decoration: none}
+.nupp1:hover , .nupp2:hover{background-color: #dfa041; color: white;}
+.nupp1{position:fixed;left: 250px;top: 30px;}
+.nupp2{position:fixed;left: 350px;top: 30px;}
