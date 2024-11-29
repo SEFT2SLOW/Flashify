@@ -10,43 +10,55 @@ body {
 }
 
 .header {
-    width: 100%;
-    background-color: #dedddc;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
     position: fixed;
-    top: 0;
+    top: 6px;
+    left: 0px;
+    width: 95%;
+    height: 90px;
+    background: #dedddc;
+    color: white;
+    border-radius: 25px;
     z-index: 1;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.header h1 {
-    margin: 0 20px;
-    font-size: 1.5rem;
 }
 
 .logo {
-    margin-left: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-.nupp1, .nupp2 {
-    padding: 10px 20px;
-    background-color: white;
-    border: 2px solid #dfa041;
+h1 {
+    position: fixed;
+    top: 10px;
+    left: 90px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nupp1, .nupp2, .järgmine, .tühjenda {
+    padding: 12px 28px;
     border-radius: 12px;
-    text-decoration: none;
+    background-color: white;
     color: black;
-    margin-right: 10px;
-    transition: all 0.2s;
+    border: 2px solid #dfa041;
+    text-decoration: none;
 }
-
 .nupp1:hover, .nupp2:hover {
     background-color: #dfa041;
     color: white;
 }
+.nupp1 {
+    position: fixed;
+    left: 250px;
+    top: 30px;
+}
+
+.nupp2 {
+    position: fixed;
+    left: 355px;
+    top: 30px;
+}
+
 
 .intro {
     margin-top: 100px;
