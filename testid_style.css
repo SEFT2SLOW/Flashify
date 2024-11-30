@@ -1,0 +1,222 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    position: fixed;
+    top: 6px;
+    left: 0px;
+    width: 95%;
+    height: 90px;
+    background: #dedddc;
+    color: white;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    position: fixed;
+    top: 10px;
+    left: 90px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nupp1, .nupp2, .järgmine, .tühjenda {
+    padding: 12px 28px;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    border: 2px solid #dfa041;
+    text-decoration: none;
+}
+.nupp1:hover, .nupp2:hover {
+    background-color: #dfa041;
+    color: white;
+}
+.nupp1 {
+    position: fixed;
+    left: 250px;
+    top: 30px;
+}
+
+.nupp2 {
+    position: fixed;
+    left: 355px;
+    top: 30px;
+}
+
+/* Основной контейнер для тестов */
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 120px auto 20px; /* Добавлен отступ сверху из-за фиксированного хедера */
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовки */
+h2 {
+    text-align: center;
+    color: #444;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Контейнер для тестов */
+#quiz-container {
+    margin: 20px 0;
+}
+
+/* Блок для каждого теста */
+.quiz {
+    margin-bottom: 30px;
+    border: 2px solid #dfa041;
+    border-radius: 10px;
+    padding: 15px;
+    background: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.quiz:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(223, 160, 65, 0.2);
+}
+
+/* Заголовки тестов */
+.quiz h3 {
+    color: #222;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* Вопросы */
+.question {
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 8px;
+    background: #eff6ff;
+    border: 1px solid #ddd;
+}
+
+.question p {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Контейнер для вопросов */
+.questions-container {
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+/* Заголовки тестов */
+.quiz-title {
+    background: #dfa041;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    transition: background 0.3s;
+}
+
+.quiz-title:hover {
+    background: #c97b33;
+}
+
+/* Кнопка проверки */
+.check-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background: #dfa041;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.check-button:hover {
+    background: #c97b33;
+}
+
+/* Ответы */
+label {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+label:hover {
+    background: #dfa041;
+    color: white;
+}
+
+/* Кнопка для завершения теста */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: white;
+    background: linear-gradient(135deg, #dfa041, #c97b33);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #c97b33, #9f5e20);
+    transform: scale(1.05);
+}
+
+/* Сообщение об обратной связи */
+.feedback {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.feedback.green {
+    color: #28a745;
+}
+
+.feedback.red {
+    color: #dc3545;
+}
+
+.feedback.orange {
+    color: #fd7e14;
+}
+
+
+
