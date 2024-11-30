@@ -1,0 +1,158 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color:white
+  }
+.header {
+    position: fixed;
+    top: 6px;
+    width: 95%;
+    height: 90px;
+    background: #dedddc;
+    color: white;
+    border-radius: 25px;
+    z-index: 1; 
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    position: fixed;
+    top: 10px;
+    left: 90px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.nupp1, .nupp2, .järgmine, .tühjenda {
+    padding: 12px 28px;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    border: 2px solid #dfa041;
+    text-decoration: none;
+}
+
+.nupp1:hover, .nupp2:hover, .järgmine:hover, .tühjenda:hover {
+    background-color: #dfa041;
+    color: white;
+}
+
+.nupp1 {
+    position: fixed;
+    left: 250px;
+    top: 30px;
+}
+
+.nupp2 {
+    position: fixed;
+    left: 355px;
+    top: 30px;
+}
+
+.vasak, .parem {
+    position: fixed;
+    top: 100px;
+    width: 50%;
+    height: calc(100% - 100px);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.vasak {
+    left: 0;
+    background-color: rgb(220, 220, 220);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parem {
+    right: 0;
+    background-color: rgb(233, 233, 233);
+    border-radius: 12px;
+    text-align: center;
+    overflow-y: auto;
+}
+
+
+.konteiner {
+    display: flex;
+    width: 90%;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+
+.kast {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.mõiste, .vastus {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+
+.flashcard {
+    width: 90%;
+    max-width: 70%;
+    aspect-ratio: 1;
+    margin: 5%;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #333;
+    cursor: pointer;
+    user-select: none;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: center;
+    word-break: break-word;
+}
+.flashcard img {max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+.flashcard:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.järgmine {
+    margin-top: -15px;
+    padding: 10px;
+    font-size: 16px;
+    cursor:pointer;
+    position: relative;
+    left: 0px;
+}
