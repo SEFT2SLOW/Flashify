@@ -59,7 +59,6 @@ h1 {
     top: 30px;
 }
 
-
 .intro {
     margin-top: 100px;
     width: 80%;
@@ -69,17 +68,6 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-}
-
-.intro h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.intro p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: #555;
 }
 
 .container {
@@ -97,11 +85,6 @@ h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar h2, .timeline h2 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
 .task {
     background-color: #e0e0e0;
     padding: 10px 15px;
@@ -117,35 +100,40 @@ h1 {
     color: white;
 }
 
-.timeline {
-    min-height: 300px;
+.task:active {
+    cursor: grabbing;
+}
+
+.timeline .schedule {
+    min-height: 300px; 
+    width: 100%;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border: 2px dashed #ccc;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: transparent;
     padding: 20px;
 }
 
-.instructions {
-    margin: 10px 0;
-    color: #888;
-    font-style: italic;
-}
-
 .evaluate {
-    margin: 20px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #dfa041;
-    color: white;
-    border-radius: 10px;
-    font-size: 1rem;
-    cursor: pointer;
+    margin: 10px auto;     
+    padding: 8px 16px;   
+    border: none;           
+    background-color: #dfa041; 
+    color: white;           
+    border-radius: 15px;    
+    font-size: 1.2rem;       
+    font-weight: bold;       
+    cursor: pointer;       
+    width: 200px;            
+    text-align: center;     
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s, background-color 0.2s; 
 }
 
-.feedback {
-    font-size: 1.2rem;
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
+.evaluate:hover {
+    background-color: #c88938; 
+    transform: scale(1.1);    
 }
